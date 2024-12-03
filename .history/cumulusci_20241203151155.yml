@@ -20,12 +20,11 @@ tasks:
             path: robot/EEOC/tests
             output: robot/EEOC/doc/EEOC_tests.html
 
-flows:
-    dev_org:
-        steps:
-            89:
-                task: assign_permission_sets
-                options:
-                    api_names: EEOC_Developer
+dev_org:
+    steps:
+        89:
+            task: assign_permission_set
+            options:
+                api_names: EEOC_Developer
         
 
