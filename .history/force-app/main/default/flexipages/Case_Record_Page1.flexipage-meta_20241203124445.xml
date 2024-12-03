@@ -13,6 +13,9 @@
                             <value>Delete</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>Global.FSL__NewTask</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>CustomButton.Case.Escalate_to_Pre_Complaint</value>
                             <visibilityRule>
                                 <criteria>
