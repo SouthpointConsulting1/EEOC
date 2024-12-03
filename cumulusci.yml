@@ -1,0 +1,22 @@
+minimum_cumulusci_version: '3.93.0'
+project:
+    name: EEOC
+    package:
+        name: EEOC
+        api_version: '62.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/EEOC/tests
+            options:
+                outputdir: robot/EEOC/results
+
+    robot_testdoc:
+        options:
+            path: robot/EEOC/tests
+            output: robot/EEOC/doc/EEOC_tests.html
+
