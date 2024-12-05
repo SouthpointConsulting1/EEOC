@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Escalate_to_Pre_Complaint</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Escalate to Pre-Complaint</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/flow/EEOC_Case_Escalation?recordId={!Case.Id}&amp;retURL=lightning/o/Case/list?filterName=All_EEO_Pre_Complaints</url>
+</WebLink>

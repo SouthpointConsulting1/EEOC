@@ -1,0 +1,15 @@
+// Fetch all Accounts
+List<Account> accountsToDelete = [SELECT Id FROM Account];
+
+// Fetch related child records: Contacts, Cases, and Entitlements
+List<Contact> contactsToDelete = [SELECT Id FROM Contact WHERE AccountId IN :accountsToDelete];
+List<Case> casesToDelete = [SELECT Id FROM Case WHERE AccountId IN :accountsToDelete];
+List<Entitlement> entitlementsToDelete = [SELECT Id FROM Entitlement WHERE AccountId IN :accountsToDelete];
+
+// Delete related child records in order to resolve dependencies
+delete entitlementsToDelete;
+delete casesToDelete;
+delete contactsToDelete;
+
+// Now delete the Accounts
+delete accountsToDelete;

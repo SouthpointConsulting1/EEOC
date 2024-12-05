@@ -1,0 +1,130 @@
+Account:
+    sf_object: Account
+    soql_filter: "Name != null AND IsPersonAccount = false"
+    fields:
+        - AccountNumber
+        - AccountSource
+        - AnnualRevenue
+        - BillingCity
+        - BillingCountry
+        - BillingGeocodeAccuracy
+        - BillingLatitude
+        - BillingLongitude
+        - BillingPostalCode
+        - BillingState
+        - BillingStreet
+        - Description
+        - Fax
+        - Industry
+        - Name
+        - NumberOfEmployees
+        - Ownership
+        - Phone
+        - Rating
+        - ShippingCity
+        - ShippingCountry
+        - ShippingGeocodeAccuracy
+        - ShippingLatitude
+        - ShippingLongitude
+        - ShippingPostalCode
+        - ShippingState
+        - ShippingStreet
+        - Sic
+        - SicDesc
+        - Site
+        - TickerSymbol
+        - Type
+        - Website
+
+Contact:
+    sf_object: Contact
+    soql_filter: "AccountId IN (SELECT Id FROM Account WHERE Name != null AND IsPersonAccount = false)"
+    fields:
+        - AssistantName
+        - AssistantPhone
+        - Birthdate
+        - Department
+        - Description
+        - Email
+        - Fax
+        - FirstName
+        - HomePhone
+        - LastName
+        - LeadSource
+        - MailingCity
+        - MailingCountry
+        - MailingGeocodeAccuracy
+        - MailingLatitude
+        - MailingLongitude
+        - MailingPostalCode
+        - MailingState
+        - MailingStreet
+        - MobilePhone
+        - OtherCity
+        - OtherCountry
+        - OtherPhone
+        - OtherPostalCode
+        - OtherState
+        - OtherStreet
+        - Phone
+        - Salutation
+        - Title
+    lookups:
+        AccountId:
+            table: Account
+            key_field: AccountNumber
+
+Case:
+    sf_object: Case
+    soql_filter: "RecordType.DeveloperName IN ('EEOC', 'EEOC_Pre_Complaint', 'EEOC_Formal_Complaint') AND AccountId IN (SELECT Id FROM Account WHERE Name != null AND IsPersonAccount = false)"
+    anchor_date: 2024-12-04
+    fields:
+        - DateTime_Opened_c__c
+        - Description
+        - Origin
+        - Priority
+        - RecordTypeId
+        - Status
+        - Subject
+        - SuppliedEmail
+        - SuppliedName
+        - eeoc_ADR_Eligible__c
+        - eeoc_AJ_Assigned_Date__c
+        - eeoc_Basis__c
+        - eeoc_Case_Stage__c
+        - eeoc_Claims__c
+        - eeoc_Counselor_Report_Status__c
+        - eeoc_Current_Deadline__c
+        - eeoc_Discovery_End_Date__c
+        - eeoc_Discovery_Start_Date__c
+        - eeoc_Finding_of_Discrimination__c
+        - eeoc_Formal_Complaint_Date__c
+        - eeoc_Hearing_Date__c
+        - eeoc_Hearing_Requested__c
+        - eeoc_Implementation_Status__c
+        - eeoc_Incident_Date__c
+        - eeoc_Initial_Conference_Date__c
+        - eeoc_Initial_Review__c
+        - eeoc_Investigation_Period_End__c
+        - eeoc_Investigation_Period_Start__c
+        - eeoc_Investigation_Type__c
+        - eeoc_Limited_Inquiry_End_Date__c
+        - eeoc_Limited_Inquiry_Start_Date__c
+        - eeoc_Limited_Inquiry_Status__c
+        - eeoc_Pre_Complaint_End_Date__c
+        - eeoc_Pre_Complaint_Start_Date__c
+        - eeoc_Processed_Date__c
+        - eeoc_ROI_Status__c
+        - eeoc_Regulatory_Period_End__c
+        - eeoc_Remedial_Hearing_Date__c
+        - eeoc_Resolution_Type__c
+        - eeoc_Rights_Acknowledged__c
+        - eeoc_Rights_Notification_Date__c
+        - eeoc_Status__c
+    lookups:
+      AccountId:
+        table: Account
+        key_field: AccountNumber
+      ContactId:
+        table: Contact
+        key_field: Email        
