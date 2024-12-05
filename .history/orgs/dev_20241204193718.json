@@ -13,7 +13,6 @@
     },
     "securitySettings": {
       "enableAdminLoginAsAnyUser": true,
-      "enableAuditFieldsInactiveOwner": true,
       "sessionSettings": {
         "forceRelogin": false
       }
@@ -23,5 +22,8 @@
     },
     "enhancedNotesSettings": {
       "enableEnhancedNotes": true
-    }
+    },
+    "securitySettings": {
+        "enableAuditFieldsInactiveOwner": true
+  }
 }
