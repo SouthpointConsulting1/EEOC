@@ -82,7 +82,6 @@ Case:
         - DateTime_Opened_c__c
         - Description
         - Origin
-        - CreatedDate
         - Priority
         - RecordTypeId
         - Status
