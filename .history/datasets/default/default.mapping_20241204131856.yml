@@ -137,7 +137,6 @@ FeedItem:
         - IsRichText
         - Status
         - Title
-        - Type
     lookups:
       ParentId:
         table: Case

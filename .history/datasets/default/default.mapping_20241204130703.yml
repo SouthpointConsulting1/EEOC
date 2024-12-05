@@ -138,6 +138,7 @@ FeedItem:
         - Status
         - Title
         - Type
+        - Visibility
     lookups:
       ParentId:
         table: Case

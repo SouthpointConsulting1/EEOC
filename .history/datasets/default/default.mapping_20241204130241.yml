@@ -128,14 +128,18 @@ Case:
       ContactId:
         table: Contact
         key_field: Email
-
+        
 FeedItem:
     sf_object: FeedItem
-    soql_filter: "ParentId IN (SELECT Id FROM Case WHERE RecordType.DeveloperName IN ('EEOC', 'EEO_Pre_Complaint', 'EEO_Formal_Complaint'))"
+    soql_filter: "ParentId IN (SELECT Id FROM Case WHERE RecordType.DeveloperName IN ('EEOC', 'EEO_Pre_Complaint', 'EEO_Formal_Complaint') AND AccountId IN (SELECT Id FROM Account WHERE Name != null AND IsPersonAccount = false))"
     fields:
         - Body
-        - IsRichText
-        - Status
+        - CommentCount
+        - CreatedById
+        - CreatedDate
+        - LastModifiedDate
+        - ParentId
+        - RelatedRecordId
         - Title
         - Type
     lookups:
