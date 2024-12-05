@@ -83,7 +83,7 @@
         <inputAssignments>
             <field>OwnerId</field>
             <value>
-                <stringValue>005Kj00000CLC5Q</stringValue>
+                <elementReference>$User.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
