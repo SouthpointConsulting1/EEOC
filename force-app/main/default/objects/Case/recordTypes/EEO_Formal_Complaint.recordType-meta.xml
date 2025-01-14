@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EEO_Formal_Complaint</fullName>
+    <active>true</active>
+    <businessProcess>EEOC Process</businessProcess>
+    <compactLayoutAssignment>EEOC_Formal_Complaint_Compact_Layout</compactLayoutAssignment>
+    <label>EEO Formal Complaint</label>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Breakdown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Complexity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equipment Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Structural</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Basis__c</picklist>
+        <values>
+            <fullName>Age</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Genetic Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>National Origin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Race</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Religion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retaliation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sex</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Case_Stage__c</picklist>
+        <values>
+            <fullName>AJ Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Agency Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Formal Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-Complaint</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Counselor_Report_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Implementation_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Initial_Review__c</picklist>
+        <values>
+            <fullName>Closed - Further Action Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - No Action Needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Investigation_Type__c</picklist>
+        <values>
+            <fullName>Full Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited Inquiry</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Limited_Inquiry_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_ROI_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Started</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Under Review</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Resolution_Type__c</picklist>
+        <values>
+            <fullName>AJ Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Final Agency Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>eeoc_Status__c</picklist>
+        <values>
+            <fullName>AJ Processing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Corrective Action</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Dismissed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed - Settlement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Complaint Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pre-complaint</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

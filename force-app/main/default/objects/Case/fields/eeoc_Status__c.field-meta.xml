@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eeoc_Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Pre-complaint</fullName>
+                <default>false</default>
+                <label>Pre-complaint</label>
+            </value>
+            <value>
+                <fullName>Complaint Review</fullName>
+                <default>false</default>
+                <label>Complaint Review</label>
+            </value>
+            <value>
+                <fullName>Investigation</fullName>
+                <default>false</default>
+                <label>Investigation</label>
+            </value>
+            <value>
+                <fullName>AJ Processing</fullName>
+                <default>false</default>
+                <label>AJ Processing</label>
+            </value>
+            <value>
+                <fullName>Closed - Dismissed</fullName>
+                <default>false</default>
+                <label>Closed - Dismissed</label>
+            </value>
+            <value>
+                <fullName>Closed - Settlement</fullName>
+                <default>false</default>
+                <label>Closed - Settlement</label>
+            </value>
+            <value>
+                <fullName>Closed - Corrective Action</fullName>
+                <default>false</default>
+                <label>Closed - Corrective Action</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

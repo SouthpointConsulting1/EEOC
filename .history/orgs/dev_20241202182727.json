@@ -13,16 +13,12 @@
     },
     "securitySettings": {
       "enableAdminLoginAsAnyUser": true,
-      "enableAuditFieldsInactiveOwner": true,
       "sessionSettings": {
         "forceRelogin": false
       }
     },
     "languageSettings": {
       "enableTranslationWorkbench": true
-    },
-    "enhancedNotesSettings": {
-      "enableEnhancedNotes": true
     }
-}
+  }
 }
